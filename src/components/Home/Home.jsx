@@ -7,6 +7,10 @@ const Home = () => {
     const quizs=useLoaderData()
     const allQuizs=quizs.data
     console.log(quizs)
+
+    // const handleQuizCart=(id)=>{
+
+    // }
     
     return (
         <div>
