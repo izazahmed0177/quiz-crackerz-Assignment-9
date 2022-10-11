@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar, RadarChart, PolarRadiusAxis, PolarAngleAxis, PolarGrid, Radar, RadialBarChart, RadialBar } from 'recharts';
 
 
 // import React, { PureComponent } from 'react';
@@ -34,7 +34,7 @@ const Statistics = () => {
     return (
         <div>
             <div className='text-center'>
-                <LineChart  width={500} height={300}data={quizsData}>
+                <LineChart  width={500} height={300} data={quizsData}>
 
                      <XAxis dataKey="name" />
                          <YAxis />
@@ -60,6 +60,11 @@ const Statistics = () => {
                     </BarChart>
 
 
+                </div>
+                <div>
+                   
+
+                
                 </div>
 
         </div>
