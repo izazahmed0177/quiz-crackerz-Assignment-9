@@ -25,7 +25,7 @@ const QuestionsAll = ({quizs}) => {
             
         } else {
           
-            toast.success(`${eventvalue.option} wrong ans`,{autoClose:2000})
+            toast.error(`${eventvalue.option} wrong ans`,{autoClose:2000})
         }
       };
 
@@ -41,7 +41,7 @@ const QuestionsAll = ({quizs}) => {
 <section className="dark:bg-gray-800 dark:dark:text-gray-100">
 	<div className="container flex justify-center gap-3">
 		{/* <div className="w-full lg:w-1/3" ></div> */}
-		<div className=" w-full p-6 lg:w-2/3 md:p-8 lg:p-12 border-2 border-indigo-600 m-3">
+		<div className=" w-full p-6 lg:w-2/3 md:p-8 lg:p-12 border-2 border-indigo-600 m-3 bg-slate-600 text-white rounded shadow-lg shadow-indigo-500">
 			<div className='flex'>
                 <div className='flex-auto'>
                 <h2 className="text-2xl font-semibold leading-none">Question :{question}</h2>
@@ -66,7 +66,7 @@ const QuestionsAll = ({quizs}) => {
             </div>
 				
 			
-			<p className="mt-4 mb-8 text-sm">
+			<p className="mt-4 mb-8 text-sm m-4 p-5">
                 {
                     
                         options.map(option=> <Option option={option} handleChange={handleChange}></Option>)

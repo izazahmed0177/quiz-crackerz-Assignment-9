@@ -5,16 +5,16 @@ const Option = ({option,handleChange}) => {
 
 
     return (
-        <div>
+        <div className='m-2 text-lg  rounded hover:border-indigo-400 shadow-lg shadow-indigo-500/50'>
             {/* <p>{option}</p> */}
-            <div  className='m-4 text-lg'>
+            <div  className=''>
                
               
 
             
     
 
-               <label className='m-2'>
+               <label className=''>
                 <input  onClick={()=>handleChange({option})} className='m-2' type="radio" name="selected"
                  /> 
                  {option}</label>
