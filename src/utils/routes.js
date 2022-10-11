@@ -31,7 +31,8 @@ const router = createBrowserRouter([
             },
             {
                 path: '/topics',
-                element: <Topics></Topics>
+                element: <Topics></Topics>,
+                loader: quizData,
             },
             {
                 path: '/statistics',

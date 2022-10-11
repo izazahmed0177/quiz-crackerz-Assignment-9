@@ -15,14 +15,23 @@ const QuizCart = ({quiz}) => {
       <p className='mb-2 text-xl font-bold leading-none sm:text-2xl'>{name}</p>
       <p className='text-gray-700 '>Questions: {total}</p>
       {/* <p className='text-gray-700 font-bold'>Price: {price}$</p> */}
-      <button
-        // onClick={() => handleAddToCart(product)}
-       
+
+      {/* <button
         type='button'
         className='px-8 block w-full mt-4 py-3 font-semibold rounded-full bg-cyan-200 text-gray-800 hover:bg-cyan-400'
       >
        <Link to={`/quiz/${id}`}> Add To Cart</Link>
-      </button>
+      </button> */}
+
+
+      <Link to={`/quiz/${id}`}>
+
+       <button
+        type='button'
+        className='px-8 block w-full mt-4 py-3 font-semibold rounded-full bg-cyan-200 text-gray-800 hover:bg-cyan-400'
+      >
+       Go To Quiz
+      </button></Link>
     </div>
         </div>
     );
