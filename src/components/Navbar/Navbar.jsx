@@ -1,43 +1,26 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import './Navbar'
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     return (
         <div className="bg-slate-600">
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex grid items-center grid-cols-2 lg:grid-cols-3">
           <ul className="flex items-center hidden space-x-8 lg:flex">
-            <li>
-              <NavLink
-                to='/'
-                aria-label="Our product"
-                title="Our product"
-                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/topics"
-                aria-label="Our product"
-                title="Our product"
-                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                Topics
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/statistics"
-                aria-label="Product pricing"
-                title="Product pricing"
-                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                Statistics
-              </NavLink>
-            </li>
+            <NavLink  className={({isActive})=> isActive ? 'active' : undefined}  
+                to='/' >
+                  <h4 className='text-white'>Home</h4> 
+            </NavLink>
+            <NavLink  className={({isActive})=> isActive ? 'active' : undefined}  
+                to="/topics">
+            <h4 className='text-white'> Topics</h4>
+            </NavLink>
+            <NavLink className={({isActive})=> isActive ? 'active' : undefined}    to="/statistics" >
+            <h4 className='text-white'> Statistics</h4>
+            </NavLink>
           </ul>
          
            
@@ -124,52 +107,50 @@ const Navbar = () => {
                   </div>
                   <nav>
                     <ul className="space-y-4">
-                      <li>
+                      <li  className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
                         <NavLink
+                         className={({isActive})=> isActive ? 'active' : undefined} 
                           to="/"
-                          aria-label="Our product"
-                          title="Our product"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        
+                         
                         >
                           Home
                         </NavLink>
                       </li>
-                      <li>
+                      <li  className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
                         <NavLink
+                         className={({isActive})=> isActive ? 'active' : undefined} 
                           to="/topics"
-                          aria-label="Our product"
-                          title="Our product"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      
+                         
                         >
                           Topics
                         </NavLink>
                       </li>
-                      <li>
+                      <li className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
                         <NavLink
+                         className={({isActive})=> isActive ? 'active' : undefined} 
                           to="/statistics"
-                          aria-label="Product pricing"
-                          title="Product pricing"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                       
+                          
                         >
                           Statistics
                         </NavLink>
                       </li>
-                      <li>
+                      <li  className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
                         <NavLink
-                          to="/blog"
-                          aria-label="Sign in"
-                          title="Sign in"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                          to="/blogs"
+                       
+                         
                         >
                           Blog
                         </NavLink>
                       </li>
-                      <li>
+                      <li className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
                         <NavLink
                           to="/about"
-                          aria-label="Sign in"
-                          title="Sign in"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                         
+                          
                         >
                           About
                         </NavLink>

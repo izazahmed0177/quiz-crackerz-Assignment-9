@@ -8,9 +8,12 @@ const QuestionsAll = ({quizs}) => {
 
     const [open, setOpen] = useState(false);
 
-    // const [selected, setSelected] = useState();
-    // const rightAns={correctAnswer};
-    // console.log(rightAns)
+   
+    
+    const newQuestion=question.slice (3, -4)
+
+   
+
     if (open) {
         toast.success(`${correctAnswer} right ans`,{autoClose:2000}, )
         
@@ -29,12 +32,6 @@ const QuestionsAll = ({quizs}) => {
         }
       };
 
-
-
-
-    // console.log(options)
-
-    // const index = quizs.map(object => object.id).indexOf(id);
     return (
         <div>
 
@@ -44,7 +41,7 @@ const QuestionsAll = ({quizs}) => {
 		<div className=" w-full p-6 lg:w-2/3 md:p-8 lg:p-12 border-2 border-indigo-600 m-3 bg-slate-600 text-white rounded shadow-lg shadow-indigo-500">
 			<div className='flex'>
                 <div className='flex-auto'>
-                <h2 className="text-2xl font-semibold leading-none">Question :{question}</h2>
+                <h2 className="text-2xl font-semibold leading-none">Question : {newQuestion}</h2>
                 </div>
                 <div className='flex-none'>
                 {/* <BeakerIcon className="h-6 w-6 text-blue-500"/> */}
