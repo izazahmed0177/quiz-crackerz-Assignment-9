@@ -1,14 +1,24 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 import Option from '../Option/Option';
 
 const QuestionsAll = ({quizs}) => {
-    const {id,question,options}=quizs
+    const {id,question,options,correctAnswer}=quizs;
 
-    const [selected, setSelected] = useState();
+    // const [selected, setSelected] = useState();
+    // const rightAns={correctAnswer};
+    // console.log(rightAns)
 
     const handleChange = eventvalue => {
-        console.log(eventvalue);
-        // setSelected(event.target.value);
+       
+        if (eventvalue.option===correctAnswer) {
+           
+            toast.success(`${correctAnswer} right ans`,{autoClose:2000})
+            
+        } else {
+          
+            toast.success(`${eventvalue.option} wrong ans`,{autoClose:2000})
+        }
       };
 
 
