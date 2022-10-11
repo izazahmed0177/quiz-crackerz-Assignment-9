@@ -5,7 +5,7 @@ const Option = ({option,handleChange}) => {
 
 
     return (
-        <div className='m-2 text-lg  rounded hover:border-indigo-400 shadow-lg shadow-indigo-500/50'>
+        <div className='m-2 text-lg bg-slate-700  rounded hover:border-indigo-400 shadow-lg shadow-indigo-500/50'>
             {/* <p>{option}</p> */}
             <div  className=''>
                

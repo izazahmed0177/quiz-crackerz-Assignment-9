@@ -72,9 +72,10 @@ const Navbar = () => {
           </ul>
           <div className="ml-auto lg:hidden">
             <button
+            
               aria-label="Open Menu"
               title="Open Menu"
-              className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline"
+              className="p-2 -mr-1 text-white bg-white transition duration-200 rounded focus:outline-none focus:shadow-outline"
               onClick={() => setIsMenuOpen(true)}
             >
               <svg className="w-5 text-gray-600" viewBox="0 0 24 24">

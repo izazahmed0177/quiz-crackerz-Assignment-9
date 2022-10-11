@@ -99,6 +99,7 @@ Z`;
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
           <YAxis />
+          <Tooltip />
           <Bar dataKey="total" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
             {quizsData.map((entry, index) => (
               <Cell key={`cell-${index}`}  />
@@ -112,7 +113,7 @@ Z`;
 
 
                 <PieChart width={400} height={400}>
-          <Pie
+                   <Pie
             dataKey="total"
             startAngle={180}
             endAngle={0}
@@ -123,6 +124,7 @@ Z`;
             fill="#8884d8"
             label
           />
+           <Tooltip />
         </PieChart>
                 </div>
 
@@ -133,7 +135,8 @@ Z`;
           <PolarGrid />
           <PolarAngleAxis dataKey="name" />
           <PolarRadiusAxis />
-          <Radar name="Mike" dataKey="total" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
+          <Tooltip />
+          <Radar name="Total" dataKey="total" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
         </RadarChart>
                 </div>
 
