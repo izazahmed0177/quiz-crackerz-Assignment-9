@@ -1,56 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Option from '../Option/Option';
 
 const QuestionsAll = ({quizs}) => {
     const {id,question,options}=quizs
-    console.log(options)
+
+    const [selected, setSelected] = useState();
+
+    const handleChange = eventvalue => {
+        console.log(eventvalue);
+        // setSelected(event.target.value);
+      };
+
+
+
+
+    // console.log(options)
+
+    // const index = quizs.map(object => object.id).indexOf(id);
     return (
         <div>
-            <h1>question :{question}</h1>
-            <section className='text-gray-600 bg-slate-200'>
-                <div className='container px-5 py-24 mx-auto'>
-                    <div className='flex flex-col text-center w-full mb-20'>
-                    <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Question :{question}</h1>
 
-                    </div>
-
-                    <div className='lg:w-2/3 w-full mx-auto overflow-auto'>
-                    {/* <div className='border-t-2 border-b-2 border-gray-500 px-4 py-3 flex flex-row gap-3'> */}
-                    <div className=''>
+<section className="dark:bg-gray-800 dark:dark:text-gray-100">
+	<div className="container flex justify-center gap-3">
+		{/* <div className="w-full lg:w-1/3" ></div> */}
+		<div className=" w-full p-6 lg:w-2/3 md:p-8 lg:p-12 border-2 border-indigo-600 m-3">
+			<div>
+            <h2 className="text-2xl font-semibold leading-none">Question :{question}</h2>
+            </div>
+				
+			
+			<p className="mt-4 mb-8 text-sm">
+                {
                     
-                   
+                        options.map(option=> <Option option={option} handleChange={handleChange}></Option>)
+                       
+                }
+            </p>
+			
+		</div>
+	</div>
+</section>
 
-                
-                   
-
-                    
-
-
-                           <div class="flex items-center pl-4 rounded border border-gray-200 dark:border-gray-700">
-                                  <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-                                  <label for="bordered-radio-1" class="py-4 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">{options[0]}</label>
-                            </div>
-                           <div class="flex items-center pl-4 rounded border border-gray-200 dark:border-gray-700">
-                                <input checked id="bordered-radio-2" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-                                <label for="bordered-radio-2" class="py-4 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">{options[1]}</label>
-                           </div>
-
-
-
-
-
-
-
-
-                        
-
-                        
-                     </div>
-
-                    </div>
-
-                </div>
-
-            </section>
         </div>
     );
 };

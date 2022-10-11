@@ -13,7 +13,7 @@ import { useLoaderData } from 'react-router-dom';
 const Statistics = () => {
     const quizs=useLoaderData()
     const allQuizs=quizs.data
-    console.log(allQuizs)
+    // console.log(allQuizs)
 
 
 
