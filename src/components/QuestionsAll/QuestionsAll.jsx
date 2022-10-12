@@ -7,28 +7,37 @@ const QuestionsAll = ({quizs}) => {
     const {id,question,options,correctAnswer}=quizs;
 
     const [open, setOpen] = useState(false);
+   
+
+   
 
    
     
     const newQuestion=question.slice (3, -4)
 
+   const notify = () => {
+    toast.success(`${correctAnswer} Right Answer`,{autoClose:2000}, )
+
+
+   };
+
    
 
-    if (open) {
-        toast.success(`${correctAnswer} right ans`,{autoClose:2000}, )
+    // if (open) {
+    //     toast.success(`${correctAnswer} right ans`,{autoClose:2000}, )
         
-    } 
+    // } 
    
 
     const handleChange = eventvalue => {
        
         if (eventvalue.option===correctAnswer) {
            
-            toast.success(`${correctAnswer} right ans`,{autoClose:2000})
+            toast.success(`${correctAnswer} Right Answer`,{autoClose:2000})
             
         } else {
           
-            toast.error(`${eventvalue.option} wrong ans`,{autoClose:2000})
+            toast.error(`${eventvalue.option} Wrong Answer`,{autoClose:2000})
         }
       };
 
@@ -49,10 +58,18 @@ const QuestionsAll = ({quizs}) => {
                 <EyeIcon className="h-6 w-6 text-blue-500"></EyeIcon> */}
 
                 {
-                open ? <EyeIcon  onClick={() => setOpen(!open)}
+
+
+
+                open ? <EyeIcon  onClick={() => setOpen(!open) }
                     className="h-6 w-6" />
-                    : <EyeSlashIcon onClick={() => setOpen(!open)}
+                    : <EyeSlashIcon onClick={() => setOpen(!open,notify())}
                         className="h-6 w-6" />
+
+                      
+
+
+
 
                       
             }
