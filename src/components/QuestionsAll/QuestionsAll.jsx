@@ -7,12 +7,8 @@ const QuestionsAll = ({quizs}) => {
     const {id,question,options,correctAnswer}=quizs;
 
     const [open, setOpen] = useState(false);
-   
-
-   
-
-   
     
+   
     const newQuestion=question.slice (3, -4)
 
    const notify = () => {
@@ -53,25 +49,14 @@ const QuestionsAll = ({quizs}) => {
                 <h2 className="text-2xl font-semibold leading-none">Question : {newQuestion}</h2>
                 </div>
                 <div className='flex-none'>
-                {/* <BeakerIcon className="h-6 w-6 text-blue-500"/> */}
-                {/* <EyeSlashIcon className="h-6 w-6 text-blue-500"></EyeSlashIcon>
-                <EyeIcon className="h-6 w-6 text-blue-500"></EyeIcon> */}
+
 
                 {
-
-
 
                 open ? <EyeIcon  onClick={() => setOpen(!open) }
                     className="h-6 w-6" />
                     : <EyeSlashIcon onClick={() => setOpen(!open,notify())}
-                        className="h-6 w-6" />
-
-                      
-
-
-
-
-                      
+                        className="h-6 w-6" />            
             }
                 
 
