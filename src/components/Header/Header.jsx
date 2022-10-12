@@ -6,65 +6,37 @@ const Header = () => {
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-accent-400">
-              <svg className="text-teal-900 w-7 h-7" viewBox="0 0 24 24">
-                <polyline
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeMiterlimit="10"
-                  points=" 8,5 8,1 16,1 16,5"
-                  strokeLinejoin="round"
-                />
-                <polyline
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeMiterlimit="10"
-                  points="9,15 1,15 1,5 23,5 23,15 15,15"
-                  strokeLinejoin="round"
-                />
-                <polyline
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeMiterlimit="10"
-                  points="22,18 22,23 2,23 2,18"
-                  strokeLinejoin="round"
-                />
-                <rect
-                  x="9"
-                  y="13"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeMiterlimit="10"
-                  width="6"
-                  height="4"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              
+              <svg className="text-teal-900 w-8 h-8"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+</svg>
+
+
+
+
+
+
+
+
+
+
             </div>
             <div className="max-w-xl mb-6">
               <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                Let us handle
+              Let you handling
+
                 <br className="hidden md:block" />
                 your next{' '}
                 <span className="inline-block text-deep-purple-accent-400">
-                  destination
+                 Quiz
                 </span>
               </h2>
               <p className="text-base text-gray-700 md:text-lg">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae. explicabo.
+              In this quiz page we have tried to show some programming related quizzes and their solutions which will enrich our knowledge and help us to compete more.
               </p>
             </div>
             <div>
-              <a
+              {/* <a
                 href="/"
                 aria-label=""
                 className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
@@ -77,7 +49,7 @@ const Header = () => {
                 >
                   <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
                 </svg>
-              </a>
+              </a> */}
             </div>
           </div>
           <div className="flex items-center justify-center -mx-4 lg:pl-8">
