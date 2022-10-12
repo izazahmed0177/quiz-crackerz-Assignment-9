@@ -20,12 +20,10 @@ const Footer = () => {
             </a>
             <div className="mt-6 lg:max-w-sm">
               <p className="text-sm text-white">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam.
+              This is a quiz side where you can answer some programming related quizzes and test yourself.
               </p>
               <p className="mt-4 text-sm text-white">
-                Eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                beatae vitae dicta sunt explicabo.
+              Here are static tips and some blogs by reading the blogs you will know many things which will enrich your knowledge
               </p>
             </div>
           </div>
@@ -36,36 +34,36 @@ const Footer = () => {
             <div className="flex">
               <p className="mr-1 text-white">Phone:</p>
               <a
-                href="tel:850-123-5021"
+                href="tel:01777657846"
                 aria-label="Our phone"
                 title="Our phone"
                 className="transition-colors text-white duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
-                850-123-5021
+                01777657846
               </a>
             </div>
             <div className="flex">
               <p className="mr-1 text-white">Email:</p>
               <a
-                href="mailto:info@lorem.mail"
+                href="izazahmedemon018@gmail.com"
                 aria-label="Our email"
                 title="Our email"
                 className="transition-colors text-white duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
-                info@lorem.mail
+                izazahmedemon018@gmail.com
               </a>
             </div>
             <div className="flex">
               <p className="mr-1 text-white">Address:</p>
               <a
-                href="https://www.google.com/maps"
+                href="https://www.google.com/maps/@23.7383497,90.3370464,19z"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Our address"
                 title="Our address"
                 className="transition-colors text-white duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
-                312 Lovely Street, NY
+                Ghather Char,Ati Bazar,Keraniganj,Dhaka
               </a>
             </div>
           </div>
@@ -75,7 +73,7 @@ const Footer = () => {
             </span>
             <div className="flex items-center mt-1 space-x-3">
               <a
-                href="/"
+                href="https://twitter.com/izazahmed0177"
                 className="text-white transition-colors duration-300 hover:text-deep-purple-accent-400"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
@@ -83,7 +81,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="/"
+                href="https://www.instagram.com/izazahmedemon/"
                 className="text-white transition-colors duration-300 hover:text-deep-purple-accent-400"
               >
                 <svg viewBox="0 0 30 30" fill="currentColor" className="h-6">
@@ -92,7 +90,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="/"
+                href="https://www.facebook.com/izazahmed.emon/"
                 className="text-white transition-colors duration-300 hover:text-deep-purple-accent-400"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
@@ -101,14 +99,13 @@ const Footer = () => {
               </a>
             </div>
             <p className="mt-4 text-sm text-white">
-              Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken
-              spare ribs salami.
+            You can easily connect with me through social media.
             </p>
           </div>
         </div>
         <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
           <p className="text-sm text-white">
-            © Copyright 2020 Lorem Inc. All rights reserved.
+            © Copyright 2022 Izaz Ahmed. All rights reserved.
           </p>
           <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
             <li>
